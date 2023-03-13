@@ -1,4 +1,4 @@
-/****** General ***********/
+/*************General *************/
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -27,7 +27,7 @@ body {
     box-sizing: border-box;
 }
 
-/***** Début du header avec nav *****/
+/************* HEADER ET NAV *************/
 
 header {
     width: 100%;
@@ -42,10 +42,13 @@ header {
     margin-top: 30px;
 }
 
-/* nav {
+nav {
     display: flex;
+    align-items: flex-start;
     width: 328.6px;
-} */
+    height: 35px;
+    padding: 0 25px;
+}
 
 nav ul {
     display: flex;
@@ -56,38 +59,23 @@ nav ul {
 
 nav li {
     list-style-type: none;
+    height: 35px;
+   
 }
 
 nav a {
     color: black;
-    margin-left: 3em;
     text-decoration: none;
+   
 }
 nav a:hover {
     border-top: 2px solid #0065fc;;
     border-bottom: none;
     color: #0065fc;
-    padding-top: 10px;
+    padding-top: 15px;
 }
-/* nav a .border-top:hover {
-    border-top: 2px solid #0065fc;
-    color: #0065fc;
-    padding-top: 10px;
-    display:initial !important;
 
-}
-nav a .border-bottom:hover {
-    border-bottom: 2px solid #0065fc;
-    color: #0065fc;
-    padding-bottom: 10px;
-   display: none;
-    
-} */
-
-
-/***** fin du header avec nav *****/
-
-/***** Début Barre de recherche *****/
+/************* SEARCH BAR *************/
 
 .section-title {
     margin: 0;
@@ -105,8 +93,6 @@ nav a .border-bottom:hover {
     background: #FFFFFF;
     border-radius: 15px;
     margin: 30px 0px;
-
-    /* Inside auto layout */
 
 }
 
@@ -172,8 +158,7 @@ nav a .border-bottom:hover {
     color: #FFFFFF;
 }
 
-/***** Fin Barre de recherche *****/
-/***** Début section Filtres *****/
+/************* FILTRES ***************/
 .container_filtres {
     display: flex;
     flex-direction: column;
@@ -238,13 +223,8 @@ nav a .border-bottom:hover {
     margin-right: 10px;
 }
 
+/************* HEBERGEMENTS AND POPULAIRES *************/
 
-/***** Fin section Filtres *****/
-
-
-
-
-/****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -259,20 +239,19 @@ nav a .border-bottom:hover {
     box-sizing: border-box;
 }
 
-/**** Card cliquable *****/
+    /*Card cliquable */
 .card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    position: relative;
-    /* on met une position relative sur la card */
+    position: relative; /* on met une position relative sur la card */
+    
 }
 
 .card-link {
-    /* et une position absolute sur la card, pour l'etirer sur tout la carte on fixe le lien sur les coins*/
-    position: absolute;
+    position: absolute; /* et une position absolute sur le lien, pour l'etirer sur tout la carte et on fixe le lien sur les coins*/
     top: 0;
     bottom: 0;
     left: 0;
@@ -303,7 +282,7 @@ nav a .border-bottom:hover {
     color: var(--main-bg-color)
 }
 
-/****** Hebergements ***********/
+/************* HERBERGEMENTS *************/
 .hebergements {
     width: 65%;
     height: auto;
@@ -353,7 +332,7 @@ nav a .border-bottom:hover {
     margin-top: 10px;
 }
 
-/****** Populaires ***********/
+/************* Populaires *************/
 .populaires {
     width: 32%;
 }
@@ -404,7 +383,7 @@ nav a .border-bottom:hover {
 
 
 
-/***** Section activités ******/
+/************* ACTIVITES *************/
 
 .container-activites {
     margin-top: 50px;
@@ -443,7 +422,8 @@ nav a .border-bottom:hover {
     padding-right: 15px;
 }
 
-/**** footer ****/
+/************* FOOTER *************/
+
 footer {
     margin-top: 50px;
     width: 100%;
@@ -482,7 +462,7 @@ footer {
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
+/****** MEDIA QUERIES ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {

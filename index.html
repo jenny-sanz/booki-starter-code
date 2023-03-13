@@ -35,19 +35,22 @@
 
         </header>
         <main>
-            <!-- section recherche -->
-
+            <!-- section recherche et filtres -->
             <section>
+
+                <!-- Titre -->
                 <div class="section-title ">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
+
+                <!-- Barre de recherche -->
                 <form action="#" method="get" class="container_search">
                     <div class="iconLocate">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                     <div class="search_bar">
-                        <input class="search" type="search" id="search-villes" name="villes" placeholder="Marseille, France" aria-label="Sélectionner la la ville de votre choix">
+                        <input class="search" type="search" id="search-villes" name="villes" placeholder="Marseille, France" aria-label="Sélectionner la ville de votre choix">
                         <button class="buttonSearch" type="submit"> Rechercher</button>
                         <button class="button-mobile" type="submit">
                             <span>
@@ -56,9 +59,7 @@
                         </button>
                     </div>
                 </form>
-
-                <!-- section filtres -->
-
+                <!-- filtres -->
                 <div class="container_filtres">
                     <div class="list_filtre">
                         <h4>Filtres</h4>
@@ -90,10 +91,10 @@
 
             <!-- section hebergements et populaires -->
 
-            <div class="hebergements-and-populaires">
+            <section class="hebergements-and-populaires">
 
                 <!-- hebergements -->
-                <section id="hebergements" class="hebergements">
+                <div id="hebergements" class="hebergements">
                     <h2 class="section-title">Hébergements à marseille</h2>
                     <div class="container-hebergement-cards">
                         <article class="card">
@@ -135,7 +136,6 @@
                             </div>
                             <a href="" class="card-link"></a>
                         </article>
-
                         <article class="card">
                             <img src="./images/hebergements/reisetopia.jpg"
                                 alt="Image de la chambre d'hôtel montrant un lit">
@@ -155,7 +155,6 @@
                             </div>
                             <a href="" class="card-link"></a>
                         </article>
-
                         <article class="card">
                             <img src="./images/hebergements/annie-spratt.jpg"
                                 alt="Image de la chambre d'hôtel montrant un lit">
@@ -175,7 +174,6 @@
                             </div>
                             <a href="" class="card-link"></a>
                         </article>
-
                         <article class="card">
                             <img src="./images/hebergements/marcus-loke.jpg"
                                 alt="Image de la chambre d'hôtel montrant un lit">
@@ -195,7 +193,6 @@
                             </div>
                             <a href="" class="card-link"></a>
                         </article>
-
                         <article class="card">
                             <img src="./images/hebergements/nicate-lee.jpg"
                                 alt="Image de la chambre d'hôtel montrant un lit">
@@ -219,10 +216,10 @@
                     <span class="read-more">
                         <a href="#">Afficher plus</a>
                     </span>
-                </section>
+                </div>
 
                 <!-- Populaires -->
-                <section class="populaires">
+                <div class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
@@ -286,8 +283,10 @@
                             <a href="" class="card-link"></a>
                         </article>
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
+
+             <!-- Section activités -->
             <section id="activites" class="container-activites">
                 <h2 class="section-title">Activités à Marseille</h2>
                 <div class="activites-cards">
