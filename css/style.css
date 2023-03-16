@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-
+    margin: 0;
 }
 
 .main-container {
@@ -72,10 +72,10 @@ nav a:hover {
     border-top: 2px solid #0065fc;;
     border-bottom: none;
     color: #0065fc;
-    padding-top: 15px;
+    padding-top: 14px;
 }
 
-/************* SEARCH BAR *************/
+/************* BARRE DE RECHERCHE *************/
 
 .section-title {
     margin: 0;
@@ -119,12 +119,12 @@ nav a:hover {
     height: 49px;
 
 }
-
-.search {
-    width: 195px;
+.search_bar input{
+     width: 195px;
     text-align: center;
     border: 1px solid #F2F2F2;
 }
+
 
 .buttonSearch {
     width: 132px;
@@ -183,7 +183,7 @@ nav a:hover {
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    padding: 4px 19px;
+    padding: 10px 19px;
     flex: none;
 }
 
@@ -285,10 +285,7 @@ nav a:hover {
 /************* HERBERGEMENTS *************/
 .hebergements {
     width: 65%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: auto; 
 }
 
 .container-hebergement-cards {
@@ -296,15 +293,14 @@ nav a:hover {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    row-gap: 25px;
+    row-gap: 18px;
     padding-top: 35px;
     padding-bottom: 20px;
 }
 
 .container-hebergement-cards .card {
-    width: 30%;
+    width: 30.5%;
     height: auto;
-
 }
 
 .container-hebergement-cards .card-content {
@@ -451,8 +447,6 @@ footer {
     margin: 0;
     padding: 0;
     list-style-type: none;
-
-
 }
 
 .container-footer a {
@@ -517,7 +511,6 @@ footer {
         height: 200px;
     }
 
-
     .activites-cards .card {
         width: 210.33px;
         height: 270px;
@@ -526,9 +519,7 @@ footer {
     .list_filtre {
         width: 90%;
         font-size: 12px;
-
     }
-
 }
 
 /* Small devices (phones, less than 768px) */
@@ -563,12 +554,16 @@ footer {
     .buttonSearch {
         display: none;
     }
-
+    .search_bar input{
+        width: 279px;
+     
+   }
+   
     .button-mobile {
         display: initial;
         position: absolute;
         z-index: 2;
-        right: 0;
+        right: 1em;
     }
     .populaires-cards{
         display: flex;
@@ -577,8 +572,6 @@ footer {
     .populaires-cards .card {
         width: 335px;
         height: 144px;
-       
-
     }
 
     .activites-cards .card {
