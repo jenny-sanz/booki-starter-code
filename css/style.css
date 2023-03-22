@@ -40,6 +40,7 @@ header {
     height: 19px;
     width: 61.09px;
     margin-top: 30px;
+    margin-left: -20px;
 }
 
 nav {
@@ -289,7 +290,7 @@ nav a:hover {
     justify-content: space-between;
     row-gap: 18px;
     padding-top: 35px;
-    padding-bottom: 20px;
+    padding-bottom: 35px;
 }
 
 .container-hebergement-cards .card {
@@ -307,11 +308,14 @@ nav a:hover {
     padding-bottom: 10px;
 }
 
-.card-txt {
+.container-hebergement-cards .card-txt {
     font-size: 14px;
-
+    line-height: 8px;
 }
-
+.container-hebergement-cards .card-content .card-title{
+  line-height: 19px;
+  margin-top: 4px;
+}
 .hebergements a {
     text-decoration: none;
     color: #000000;
@@ -319,7 +323,6 @@ nav a:hover {
 
 .read-more {
     font-weight: bold;
-    margin-top: 10px;
 }
 
 /************* Populaires *************/
@@ -452,7 +455,7 @@ footer {
 
 /****** MEDIA QUERIES ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
