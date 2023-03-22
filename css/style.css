@@ -306,17 +306,15 @@ h1 {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    row-gap: 18px;
-    padding-top: 35px;
-    padding-bottom: 35px;
-    margin: 35px 0 20px;
+    row-gap: 25px;
     box-sizing: border-box;
-    gap: 30px;
+    padding-bottom: 35px;
+    padding-top: 35px;
 
 }
 
 .container-hebergement-cards .card {
-    width: 29.5%;
+    width: 30%;
     height: auto;
 }
 
@@ -330,7 +328,7 @@ h1 {
 
 .container-hebergement-cards .card-txt {
     font-size: 14px;
-    line-height: 8px;
+
 }
 
 .container-hebergement-cards .card-content .card-title {
@@ -345,6 +343,7 @@ h1 {
 
 .read-more {
     font-weight: bold;
+    height: 50px;
 }
 
 /************* Populaires *************/
@@ -478,6 +477,8 @@ footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** MEDIA QUERIES ***********/
+
+
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1023px) {
     .hebergements-and-populaires {
