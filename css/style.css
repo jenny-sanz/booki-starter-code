@@ -420,13 +420,14 @@ h1 {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    
 
 }
 
 .activites-cards .card {
     height: 439px;
     width: 24%;
-    padding: 0;
+    padding: 0 0 10px 0;
 }
 
 .activites-cards .card img {
@@ -434,8 +435,9 @@ h1 {
 }
 
 .activites-cards .card-content {
-    padding-left: 15px;
-    padding-right: 15px;
+  padding:15px;
+
+
 }
 
 /************* FOOTER *************/
@@ -516,7 +518,7 @@ footer {
     }
 
     .activites-cards .card-title {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .section-title {
