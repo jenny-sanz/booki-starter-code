@@ -40,6 +40,7 @@ header {
     height: 19px;
     width: 61.09px;
     margin-top: 30px;
+    margin-left: -20px;
 }
 
 nav {
@@ -60,16 +61,18 @@ nav ul {
 nav li {
     list-style-type: none;
     height: 35px;
-   
+
 }
 
 nav a {
     color: black;
     text-decoration: none;
-   
+
 }
+
 nav a:hover {
-    border-top: 2px solid #0065fc;;
+    border-top: 2px solid #0065fc;
+    ;
     border-bottom: none;
     color: #0065fc;
     padding-top: 14px;
@@ -83,6 +86,10 @@ nav a:hover {
     line-height: 0.5em;
 }
 
+h1 {
+    font-size: 22px;
+}
+
 .container_search {
     display: flex;
     flex-direction: row;
@@ -92,7 +99,7 @@ nav a:hover {
     height: 49px;
     background: #FFFFFF;
     border-radius: 15px;
-    margin: 30px 0px;
+    margin: 35px 0px;
 
 }
 
@@ -119,12 +126,17 @@ nav a:hover {
     height: 49px;
 
 }
-.search_bar input{
-     width: 195px;
+
+.search_bar input {
+    width: 195px;
     text-align: center;
     border: 1px solid #F2F2F2;
 }
 
+.search_bar input::placeholder {
+    color: #000000;
+    font-weight: bold;
+}
 
 .buttonSearch {
     width: 132px;
@@ -233,19 +245,21 @@ nav a:hover {
     box-sizing: border-box;
 }
 
-    /*Card cliquable */
+/*Card cliquable */
 .card {
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    position: relative; /* on met une position relative sur la card */
-    
+    position: relative;
+    /* on met une position relative sur la card */
+
 }
 
 .card-link {
-    position: absolute; /* et une position absolute sur le lien, pour l'etirer sur tout la carte et on fixe le lien sur les coins*/
+    position: absolute;
+    /* et une position absolute sur le lien, pour l'etirer sur tout la carte et on fixe le lien sur les coins*/
     top: 0;
     bottom: 0;
     left: 0;
@@ -266,6 +280,8 @@ nav a:hover {
 
 .card-title {
     font-size: 16px;
+    line-height: 19px;
+    margin-top: 4px;
 }
 
 .euro {
@@ -279,21 +295,24 @@ nav a:hover {
 /************* HERBERGEMENTS *************/
 .hebergements {
     width: 65%;
-    height: auto; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .container-hebergement-cards {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-between;
-    row-gap: 18px;
-    padding-top: 35px;
-    padding-bottom: 20px;
+    margin: 35px 0 20px;
+    box-sizing: border-box;
+    gap: 30px;
+
 }
 
 .container-hebergement-cards .card {
-    width: 30.5%;
+    width: 29.5%;
     height: auto;
 }
 
@@ -301,10 +320,8 @@ nav a:hover {
     width: 90%;
     height: auto;
     padding-left: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     padding-bottom: 10px;
+    line-height: 8px;
 }
 
 .card-txt {
@@ -319,7 +336,6 @@ nav a:hover {
 
 .read-more {
     font-weight: bold;
-    margin-top: 10px;
 }
 
 /************* Populaires *************/
@@ -332,9 +348,11 @@ nav a:hover {
     justify-content: space-between;
     align-items: center;
 }
-.populaires-cards{
+
+.populaires-cards {
     box-sizing: border-box;
 }
+
 .populaires-cards .card {
     display: flex;
     justify-content: space-between;
@@ -525,6 +543,7 @@ footer {
         padding-bottom: 10px;
         padding-top: 0;
     }
+
     .main-container {
         max-width: 767.99px;
     }
@@ -548,21 +567,24 @@ footer {
     .buttonSearch {
         display: none;
     }
-    .search_bar input{
+
+    .search_bar input {
         width: 279px;
-     
-   }
-   
+
+    }
+
     .button-mobile {
         display: initial;
         position: absolute;
         z-index: 2;
         right: 1em;
     }
-    .populaires-cards{
+
+    .populaires-cards {
         display: flex;
         flex-direction: column;
     }
+
     .populaires-cards .card {
         width: 335px;
         height: 144px;
@@ -583,7 +605,7 @@ footer {
         align-items: flex-start;
         padding: 30px;
         gap: 50px;
-        
+
     }
 
     /* ... */
