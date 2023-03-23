@@ -34,6 +34,7 @@ header {
     height: 79px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 #logo {
@@ -82,12 +83,8 @@ nav a:hover {
 
 .section-title {
     margin: 0;
-    font-size: 16px;
-    line-height: 1em;
-}
-
-h1 {
     font-size: 22px;
+    line-height: 0.5em;
 }
 
 .container_search {
@@ -455,14 +452,11 @@ footer {
 }
 
 .container-footer {
-    display: flex;
-    flex-direction: column;
     width: 33%;
     height: 163px;
     padding-left: 20px;
-    align-items: flex-start;
     line-height: 30px;
-
+ 
 }
 
 .container-footer ul {
