@@ -71,7 +71,7 @@ nav a {
 
 }
 
-nav a:hover {
+nav a:hover, nav a:focus {
     border-top: 2px solid #0065fc;
     ;
     border-bottom: none;
@@ -99,7 +99,18 @@ nav a:hover {
     margin: 35px 0px;
 
 }
-
+.container_search input,button{
+    height: 49px;
+}
+.container_search input {
+    width: 195px;
+    text-align: center;
+    border: 1px solid #F2F2F2;
+}
+.container_search input::placeholder {
+    color: #000000;
+    font-weight: bold;
+}
 .iconLocate {
     background-color: #F2F2F2;
     width: 50px;
@@ -116,23 +127,6 @@ nav a:hover {
 
 .fa-location-dot {
     color: #000000;
-}
-
-.search_bar {
-    display: flex;
-    height: 49px;
-
-}
-
-.search_bar input {
-    width: 195px;
-    text-align: center;
-    border: 1px solid #F2F2F2;
-}
-
-.search_bar input::placeholder {
-    color: #000000;
-    font-weight: bold;
 }
 
 .buttonSearch {
@@ -160,6 +154,7 @@ nav a:hover {
     border: 1px solid #0065FC;
     background: #0065FC;
     display: none;
+    cursor: pointer;
 
 }
 
@@ -558,27 +553,12 @@ footer {
         position: relative;
         z-index: 1;
     }
-
-    .search {
-        width: 328px;
-        text-align: center;
-        padding-right: 35px;
-        border-radius: 0 15px 15px 0;
-        -webkit-border-radius: 0 15px 15px 0;
-        -moz-border-radius: 0 15px 15px 0;
-        -ms-border-radius: 0 15px 15px 0;
-        -o-border-radius: 0 15px 15px 0;
+    .container_search input{
+        width: 279px;
     }
-
     .buttonSearch {
         display: none;
     }
-
-    .search_bar input {
-        width: 279px;
-
-    }
-
     .button-mobile {
         display: initial;
         position: absolute;
