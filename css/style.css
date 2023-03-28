@@ -142,7 +142,7 @@ nav a:hover, nav a:focus {
     border: 1px solid #0065FC;
 
 }
-
+/* BOUTON MOBILE */
 .button-mobile {
     width: 49px;
     border-radius: 15px;
@@ -515,7 +515,7 @@ footer {
     }
 
     .main-container {
-        max-width: 1024px;
+        max-width: 1023px;
         min-width: 767.99px;
 
     }
@@ -590,7 +590,7 @@ footer {
         flex-direction: column;
         align-items: flex-start;
         padding: 30px;
-        gap: 50px;
+        gap: 10px;
 
     }
 
