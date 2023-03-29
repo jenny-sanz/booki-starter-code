@@ -4,4 +4,5 @@
     },
     "editor.detectIndentation": true,
     "editor.wordWrap": "on",
+    "liveServer.settings.port": 5501,
 }
